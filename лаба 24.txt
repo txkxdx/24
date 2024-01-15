@@ -1,0 +1,59 @@
+#include <iostream>
+#include <string>
+#include <Windows.h>
+using namespace std;
+
+int main()
+{
+	int otvet1;
+	char figure;
+	string nickname;
+	int answer;
+	int otvet;
+	setlocale(0, "");
+	cout << "\x1b[92m[+] Меню игры\n\n";
+	cout << "[1] START GAME \n";
+	cout << "[2] Stats \n";
+	cout << "[3] Settings \n";
+	cout << "[4] Exit \n";
+	cout << "Answer: "; cin >> answer;
+
+
+	if (answer == 3)
+	{
+		system("cls");
+		cout << "Player's settings\n\n";
+		cout << "[1] For \x1b[91m1 \x1b[92mPlayer\n";
+		cout << "[2] For \x1b[91m2 \x1b[92mPlayer\n";
+		cout << "[3] Computer's settings \n";
+		cout << "Answer: "; cin >> otvet;
+
+		if (otvet == 1)
+		{
+			system("cls");
+			cout << "Player's \x1b[91m№1 \x1b[92msettings \n\n";
+			cout << "[1] Nickname: \n";
+			cout << "[2] Figure: \n";
+			cout << "[3] Color: \n";
+			cout << "Enter number to change: "; cin >> otvet1;
+			if (otvet1 == 1)
+			{
+				system("cls");
+				cout << "Enter your nickname: "; cin >> nickname;
+			}
+			else if (otvet1 == 2)
+			{
+				system("cls");
+				cout << "Enter your figure: "; cin >> figure;
+			}
+			else if (otvet == 3)
+			{
+				system("cls");
+				cout << "idk just take a look at some color's: ";
+				cout << "\x1b[91mRED";
+			}
+		}
+	}
+
+	
+}
